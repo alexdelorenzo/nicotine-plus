@@ -25,8 +25,8 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
 RUN pip install ptpython pytest flake8 pygobject mutagen
 ENV PYTHONPATH=".:$PYTHONPATH"
-RUN pytest
-RUN flake8 nicotine pynicotine plugins --ignore=E402,E501,W503,W504
+#RUN pytest
+#RUN flake8 nicotine pynicotine plugins --ignore=E402,E501,W503,W504
 
 ENV DISPLAY=:0
 
